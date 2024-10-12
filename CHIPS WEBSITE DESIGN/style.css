@@ -118,6 +118,7 @@ img{
   z-index: var(--z-fixed);
   transition: box-shadow .4s ;
   box-shadow: var(--shadow-card);
+  
 }
 .nav{
   position: relative;
@@ -329,6 +330,8 @@ cursor:pointer ;
   row-gap: 3rem;
   grid-template-columns: 100%;
   padding-bottom: 3rem;
+  justify-content: center;
+  
 }
 .favorite-data{
   position: relative;
@@ -696,7 +699,236 @@ margin-inline: 1rem;
 }
 
 /* For medium devices */
+@media (min-width:540px) {
 
+  .home-container,
+  .favorite-container,
+  .care-container{
+    grid-template-columns: 370px;
+    justify-content: center;
+  }
+  .fav-swiper{
+    max-width: 620px;
+    overflow-x: clip;
+    justify-self: center;
+  }
+  .products-content{
+    grid-template-columns: repeat(2, 200px);
+    justify-content: center;
+  }
+  .contact{
+    display: grid;
+    grid-template-columns: 600px;
+    justify-content: center;
+  }
+}
+
+@media (min-width:770px) {
+  .products-content{
+    grid-template-columns: repeat(3, 200px);
+  }
+  .footer-content{
+    grid-template-columns: repeat(3, max-content);
+   justify-content: space-between;
+   align-items: center;
+  }
+  .footer-copy{
+    grid-column: initial;  /*set back to default*/
+  }
+  .footer-link:nth-child(2){
+    order: 1;
+  }
+}
 
 /* For large devices */
+@media (min-width:1151px) {
+  .container{
+    margin-inline: auto;
+  }
+  .section{
+    padding-block: 6rem 2rem;
+  }
+  .section-title{
+    margin-bottom: 2rem;
+  }
+  .nav{
+    height: clac(var(--header-height) + 2rem);
+  }
+  .nav__toggle,
+  .nav__close{
+  display: none;
+  }
+  .nav__link{
+    font-size: var(--normal-font-size);
+  }
+  .nav__menu{
+    display: flex;
+    column-gap: 3rem;
+    align-items: center;
+  }
+  .nav__list{
+    flex-direction: row;
+    column-gap: 3rem;
+  }
+  .header{
+    padding: 1rem;
+  }
+  .home-container{
+    grid-template-columns: 400px 600px;
+    align-items: center;
+    column-gap: 4rem;
+    padding-top: 5rem;
+    
+  }
+  .home-data{
+    text-align: initial;
+  }
+  .home-title{
+    margin-bottom: 2rem;
+  }
+  .home-description{
+    margin-bottom: 4rem;
+  }
+  .home-button{
+    justify-content: initial;
+    column-gap: 2rem;
+  }
+  .home-meat{
+    width: 80px;
+    top: 12rem;
+  }
+  .home-circle{
+    width: 600px;
+    height: 600px;
+  }
+  .home-subcircle{
+    width: 500px;
+    height: 500px;
+  }
+  .home-images .home-image{
+    width: 350px;
+  }
+  .home-images img{
+    width: 100px;
+  }
+  /*=======the small images around the chips======*/
+  /*------------home section-----------*/
+.home-chips-1{
+  right: -20px;
+}
+.home-chips-2{
+  bottom: 20px;
+  right: 70px;
+  }
+.home-chips-3{
+  top: 0px;
+  left: 90px;
+}
+.home-tomato-1{
+  top: 30px;
+  right: 20px;
+}
+.home-tomato-2{
+  bottom: 50px;
+  left: 50px;
+}
+.home-leaf{
+  top: 200px;
+  left: -20px;
+}
+/*---------------favorite section---------*/
+.favorite-container{
+  grid-template-columns: 500px;
+  row-gap: 4rem;
+}
+.fav-cheese-1,
+.fav-cheese-2{
+  width: 60px;
+}
+.fav-cheese-1{
+  right: -120px;
+}
+.fav-cheese-2{
+  left: -145px;
+}
+.fav-article,
+.fav-img{
+  width: 300px;
+}
+.fav-leaf-1,
+.fav-leaf-2{
+  width: 100px;
+  }
+  .fav-swiper{
+    max-width: 920px;
+  }
+
+  /*care section*/
+  .care-container{
+    grid-template-columns: 500px 400px;
+    column-gap: 5rem;
+    align-items: center;
+    padding-block: 4rem;
+  }
+  .care-img{
+    width:500px;
+    order: -1;
+  }
+  .care-item i{
+    font-size: 2rem;
+  }
+  /*the banner section*/
+  .banner{
+    padding-top: 4rem;
+  }
+  .banner-container{
+    padding: 2rem;
+  }
+  .banner-item i{
+     font-size: 3rem;
+  }
+  .banner-item span{
+    font-size: var(--h2-font-size);
+  }
+
+  /*the products section section*/
+  .products-container{
+    padding-top: 8rem;
+  }
+  .products-content{
+    grid-template-columns: repeat(3, 250px);
+    gap: 10rem 5rem;
+  }
+  .products-card{
+    padding: 8rem 2rem 2rem;
+  }
+  .product-img{
+    width: 120px;
+  }
+  .produt-subtitle{
+    font-size: var(--normal-font-size);
+  }
+  .product-btn-heart{
+    font-size: 2rem;
+    right: 30px;
+    bottom: 30px;
+  }
+  .products-crap,
+  .products-burger,
+  .products-cheese{
+    width: 80px;
+}
+
+.products-cheese{
+  left: -3rem;
+  margin: initial;
+}
+/*the contact section*/
+
+.contact{
+  display: block;
+
+}
+
+}
 
