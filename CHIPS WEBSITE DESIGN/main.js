@@ -76,3 +76,26 @@ window.addEventListener("scroll", scrollActive)
 
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+//ScrollReveal, a JavaScript library used to create animations when elements scroll into view.
+
+const sr = ScrollReveal({
+  origin:"top", // Defines where the animation should start (top, bottom, left, right)
+  distance: "60px", // Specifies how far the element moves during the animation (60px from the origin)
+  duration: 2500, // Sets the duration of the animation in milliseconds (2.5 seconds)
+  delay: 300,  // Adds a delay before the animation starts (300ms)
+  reset: true,  //animation repeat
+})
+
+sr.reveal(".home-data, .favorite-container, .footer-container")
+//home-section
+sr.reveal(".home-circle, .home-image", {delay: 600, scale: .5})
+sr.reveal(".home-chips-2, .home-chips-1, .home-chips-3", {delay: 1400, interval: 100}) //option in ScrollReveal is used to control the time gap (in milliseconds) between revealing multiple elements in a sequence.
+sr.reveal(".home-leaf", {delay: 1200})
+sr.reveal(".home-tomato-1, .home-tomato-2", {delay: 1400, interval: 100})
+//care-section
+sr.reveal(".care-img, .contact-img", {origin: "left"})
+sr.reveal(".care-list, .contact-data", {origin: "right"})
+//banner-section
+sr.reveal(".banner-item, .products-card", {interval: 100})
+
+
