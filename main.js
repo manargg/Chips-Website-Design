@@ -1,4 +1,3 @@
-console.log("Script loaded!");
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById("nav-menu");
 const navToggle = document.getElementById("nav-toggle");
