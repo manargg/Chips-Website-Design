@@ -88,10 +88,10 @@ const sr = ScrollReveal({
 
 sr.reveal(".home-data, .favorite-container, .footer-container")
 //home-section
-sr.reveal(".home-circle, .home-image", {delay: 400, scale: .5})
-sr.reveal(".home-chips-1, .home-chips-2, .home-chips-3", {delay: 1400, interval: 50}) //option in ScrollReveal is used to control the time gap (in milliseconds) between revealing multiple elements in a sequence.
-sr.reveal(".home-leaf", {delay: 1200})
-sr.reveal(".home-tomato-1, .home-tomato-2", {delay: 1400, interval: 100})
+sr.reveal(".home-circle, .home-image", {delay: 100, scale: .5})
+sr.reveal(".home-chips-1, .home-chips-2, .home-chips-3", {delay: 400, interval: 50}) //option in ScrollReveal is used to control the time gap (in milliseconds) between revealing multiple elements in a sequence.
+sr.reveal(".home-leaf", {delay: 200})
+sr.reveal(".home-tomato-1, .home-tomato-2", {delay: 400, interval: 50})
 //care-section
 sr.reveal(".care-img, .contact-img", {origin: "left"})
 sr.reveal(".care-list, .contact-data", {origin: "right"})
